@@ -1,0 +1,57 @@
+{
+  "name": "capacitor-nanosqlite",
+  "version": "0.0.1",
+  "description": "Nano SQL Capacitor adapter",
+  "main": "dist/plugin.cjs.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "unpkg": "dist/plugin.js",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "author": "Eko Eryanto<ekoeryanto@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekoeryanto/nano-sql-capacitor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ekoeryanto/nano-sql-capacitor/issues"
+  },
+  "keywords": [
+    "capacitor",
+    "sqlite",
+    "native",
+    "nanosql",
+    "orm"
+  ],
+  "scripts": {
+    "lint": "npm run eslint && npm run prettier -- --check",
+    "fmt": "npm run eslint -- --fix && npm run prettier -- --write",
+    "eslint": "eslint . --ext ts",
+    "prettier": "prettier \"**/*.{css,html,ts,js}\"",
+    "build": "npm run clean && tsc && rollup -c rollup.config.js",
+    "clean": "rimraf ./dist",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@ionic/eslint-config": "^0.3.0",
+    "@ionic/prettier-config": "^1.0.1",
+    "eslint": "^7.11.0",
+    "prettier": "~2.2.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.32.0",
+    "typescript": "~4.0.3"
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^3.0.0",
+    "@capacitor-community/sqlite": "^3.0.0",
+    "@nano-sql/core": "^2.0.0"
+  },
+  "prettier": "@ionic/prettier-config",
+  "eslintConfig": {
+    "extends": "@ionic/eslint-config/recommended"
+  }
+}
