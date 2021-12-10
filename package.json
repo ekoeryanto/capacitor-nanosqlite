@@ -1,6 +1,6 @@
 {
   "name": "capacitor-nanosqlite",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Nano SQL Capacitor adapter",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
