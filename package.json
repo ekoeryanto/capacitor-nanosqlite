@@ -36,6 +36,9 @@
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
+  "dependencies": {
+    "@nano-sql/core": "^2.0.0"
+  },
   "devDependencies": {
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
@@ -47,8 +50,7 @@
   },
   "peerDependencies": {
     "@capacitor/core": "^3.0.0",
-    "@capacitor-community/sqlite": "^3.0.0",
-    "@nano-sql/core": "^2.0.0"
+    "@capacitor-community/sqlite": "^3.0.0"
   },
   "prettier": "@ionic/prettier-config",
   "eslintConfig": {
