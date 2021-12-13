@@ -14,10 +14,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ekoeryanto/nano-sql-capacitor.git"
+    "url": "git+https://github.com/ekoeryanto/capacitor-nanosqlite.git"
   },
   "bugs": {
-    "url": "https://github.com/ekoeryanto/nano-sql-capacitor/issues"
+    "url": "https://github.com/ekoeryanto/capacitor-nanosqlite/issues"
   },
   "keywords": [
     "capacitor",
